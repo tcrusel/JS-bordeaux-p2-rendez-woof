@@ -45,13 +45,12 @@
 }
 
 .cardList {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	grid-gap: 20px;
-	padding: 20px;
-	margin: 0 auto;
-	max-width: 1200px;
-	justify-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 100%;
+	padding: 20px 0px;
+	gap: 40px;
 }
 
 .cardProfile {
@@ -61,10 +60,6 @@
 }
 
 @media (max-width: 1023px) {
-	.cardList {
-		grid-template-columns: 1fr;
-	}
-
 	.content {
 		flex-direction: column;
 		align-items: center;

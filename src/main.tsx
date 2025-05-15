@@ -4,13 +4,16 @@ import "./index.css";
 import { RouterProvider } from "react-router";
 import router from "./Router";
 import { LikesProvider } from "./components/LikeContext/LikesContext";
+import { MatchProvider } from "./contexts/MatchContext";
 
 const rootElement = document.getElementById("root");
 
 if (rootElement) {
 	ReactDOM.createRoot(rootElement).render(
 		<LikesProvider>
-			<RouterProvider router={router} />
+			<MatchProvider>
+				<RouterProvider router={router} />
+			</MatchProvider>
 		</LikesProvider>,
 	);
 }

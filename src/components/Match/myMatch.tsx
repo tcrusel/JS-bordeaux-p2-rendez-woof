@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import CardProfile from "../CardProfile/CardProfile";
 import "../Recommandations/Recommandations.css";
 import useDogs from "../../API/API";
 import { useScreen } from "../../contexts/ScreenContext";
 import tidusProfile from "../../data/tidus.json";
-import type { DogType } from "../LikeContext/LikesContext";
+import { useMatch } from "../../contexts/MatchContext";
 
 function MyMatch() {
-	const [matchingDogs, setMatchingDogs] = useState<DogType[]>([]);
+	const { matchingDogs, setMatchingDogs } = useMatch();
 	const dogs = useDogs();
 	const { isMobile } = useScreen();
 
@@ -37,7 +37,7 @@ function MyMatch() {
 		});
 
 		setMatchingDogs(result);
-	}, [dogs]);
+	}, [dogs, setMatchingDogs]);
 
 	const removeDogFromList = (id: number) => {
 		setMatchingDogs((prevDogs) => prevDogs.filter((dog) => dog.id !== id));
