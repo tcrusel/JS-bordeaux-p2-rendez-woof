@@ -56,7 +56,7 @@ function Tabs() {
 					<div className="profileContainer">
 						{isMobile ? (
 							<div className="tidusProfile">
-								<CardTidus tidus={tidus} context={isMobile} />
+								<CardTidus tidus={tidus} />
 							</div>
 						) : (
 							<div className="tidusProfile">

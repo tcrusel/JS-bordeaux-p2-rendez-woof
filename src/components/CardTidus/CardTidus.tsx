@@ -7,7 +7,7 @@ import icone_flipCard from "../../assets/images/icone_flipCard.png";
 
 interface CardProfileProps {
 	tidus: DogType;
-	context: "front" | "back";
+	context?: "front" | "back";
 }
 
 function CardTidus({ tidus, context }: CardProfileProps) {
