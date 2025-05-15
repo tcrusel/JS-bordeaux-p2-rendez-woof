@@ -4,12 +4,12 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"preinstall": "npx npm-force-resolutions",
 		"api": "json-server --watch db.json --port 4000",
 		"dev": "vite",
-		"build": "node_modules/.bin/tsc -b && vite build",
+		"build": "tsc -b && vite build",
 		"check": "biome check --error-on-warnings --no-errors-on-unmatched --staged . && npm run check-types --if-present",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"prepare": "husky || true"
 	},
 	"dependencies": {
 		"beercontest": "file:",
@@ -38,13 +38,10 @@
 		"eslint-plugin-react-hooks": "^5.0.0",
 		"eslint-plugin-react-refresh": "^0.4.14",
 		"globals": "^15.11.0",
+		"husky": "^9.1.6",
 		"json-server": "^1.0.0-beta.3",
-		"npm-force-resolutions": "^0.0.10",
 		"typescript": "~5.6.2",
 		"typescript-eslint": "^8.11.0",
 		"vite": "^5.4.10"
-	},
-	"resolutions": {
-		"@rollup/rollup-linux-x64-gnu": "latest"
 	}
 }
