@@ -1,6 +1,6 @@
 import "./Slider.css";
 import { useEffect, useState } from "react";
-import victor from "../../assets/images/Victor.jpg";
+import victor from "../../assets/images/victor.jpg";
 import penelope from "../../assets/images/penelope.jpg";
 import simone from "../../assets/images/simone.jpg";
 
