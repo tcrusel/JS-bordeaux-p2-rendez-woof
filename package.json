@@ -4,6 +4,7 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
+		"vercel-build": "rm -rf node_modules && npm install && npm run build",
 		"api": "json-server --watch db.json --port 4000",
 		"dev": "vite",
 		"build": "tsc -b && vite build",
