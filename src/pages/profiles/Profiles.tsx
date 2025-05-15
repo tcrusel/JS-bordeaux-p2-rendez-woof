@@ -7,6 +7,7 @@ import CardProfile from "../../components/CardProfile/CardProfile";
 import type { DogType } from "../../components/LikeContext/LikesContext";
 import Recommandations from "../../components/Recommandations/Recommandations";
 import { useScreen } from "../../contexts/ScreenContext";
+import filterImage from "../../assets/images/filter_image.png";
 
 interface Option {
 	value: string;
@@ -122,7 +123,7 @@ function Profiles() {
 				<div className="filtersSection">
 					<img
 						id="filterLogo"
-						src="src/assets/images/filter_image.png"
+						src={filterImage}
 						alt="icone filtre"
 						width="20"
 						height="20"

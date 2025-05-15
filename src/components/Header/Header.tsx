@@ -1,5 +1,6 @@
 import "./Header.css";
 import { Link } from "react-router";
+import logoSite from "../../assets/images/logo_site.png";
 
 function Header() {
 	return (
@@ -7,7 +8,7 @@ function Header() {
 			<div className="title">
 				<img
 					className="logoSite"
-					src="src/assets/images/logo_site.png"
+					src={logoSite}
 					alt="logo"
 					width="50"
 					height="50"

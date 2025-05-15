@@ -3,6 +3,7 @@ import { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import { useScreen } from "../../contexts/ScreenContext";
 import type { DogType } from "../LikeContext/LikesContext";
+import icone_flipCard from "../../assets/images/icone_flipCard.png";
 
 interface CardProfileProps {
 	tidus: DogType;
@@ -32,7 +33,7 @@ function CardTidus({ tidus, context }: CardProfileProps) {
 								</p>
 							</div>
 							<img
-								src="src/assets/images/icone_flipCard.png"
+								src={icone_flipCard}
 								width="30"
 								height="30"
 								alt="icone flip-card"
@@ -60,7 +61,7 @@ function CardTidus({ tidus, context }: CardProfileProps) {
 								</p>
 							</div>
 							<img
-								src="src/assets/images/icone_flipCard.png"
+								src={icone_flipCard}
 								width="30"
 								height="30"
 								alt="icone flip-card"
@@ -101,7 +102,7 @@ function CardTidus({ tidus, context }: CardProfileProps) {
 									</p>
 								</div>
 								<img
-									src="src/assets/images/icone_flipCard.png"
+									src={icone_flipCard}
 									width="30"
 									height="30"
 									alt="icone flip-card"
@@ -127,7 +128,7 @@ function CardTidus({ tidus, context }: CardProfileProps) {
 									</p>
 								</div>
 								<img
-									src="src/assets/images/icone_flipCard.png"
+									src={icone_flipCard}
 									width="30"
 									height="30"
 									alt="icone flip-card"

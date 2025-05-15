@@ -12,8 +12,8 @@ function App() {
 			<ScreenProvider>
 				<Outlet />
 			</ScreenProvider>
-			<Footer />
 			<Toaster />
+			<Footer />
 		</>
 	);
 }

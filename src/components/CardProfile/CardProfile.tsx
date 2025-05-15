@@ -4,6 +4,11 @@ import { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import { toast } from "sonner";
 import { type DogType, useLikes } from "../LikeContext/LikesContext";
+import dislike_button from "../../assets/images/dislike_button.png";
+import icone_flipCard from "../../assets/images/icone_flipCard.png";
+import like_button from "../../assets/images/like_button.png";
+import separation_like_dislike from "../../assets/images/separation_like_dislike.png";
+
 
 interface CardProfileProps {
 	context: "profiles" | "myprofile";
@@ -79,7 +84,7 @@ function CardProfile({ dog, onRemove, context }: CardProfileProps) {
 						</p>
 					</div>
 					<img
-						src="src/assets/images/icone_flipCard.png"
+						src={icone_flipCard}
 						className="iconFlipCard"
 						alt="Retourner la carte"
 					/>
@@ -95,10 +100,10 @@ function CardProfile({ dog, onRemove, context }: CardProfileProps) {
 							}}
 							aria-label="Refuser ce chien"
 						>
-							<img src="src/assets/images/dislike_button.png" alt="Dislike" />
+							<img src={dislike_button} alt="Dislike" />
 						</button>
 						<img
-							src="src/assets/images/separation_like_dislike.png"
+							src={separation_like_dislike}
 							alt="Séparation"
 						/>
 						<button
@@ -109,7 +114,7 @@ function CardProfile({ dog, onRemove, context }: CardProfileProps) {
 							}}
 							aria-label="Aimer ce chien"
 						>
-							<img src="src/assets/images/like_button.png" alt="Like" />
+							<img src={like_button} />
 						</button>
 					</div>
 				)}
@@ -150,7 +155,7 @@ function CardProfile({ dog, onRemove, context }: CardProfileProps) {
 						</p>
 					</div>
 					<img
-						src="src/assets/images/icone_flipCard.png"
+						src={icone_flipCard}
 						className="iconFlipCard"
 						alt="Retourner la carte"
 					/>
@@ -204,10 +209,10 @@ function CardProfile({ dog, onRemove, context }: CardProfileProps) {
 							}}
 							aria-label="Refuser ce chien"
 						>
-							<img src="src/assets/images/dislike_button.png" alt="Dislike" />
+							<img src={dislike_button} alt="Dislike" />
 						</button>
 						<img
-							src="src/assets/images/separation_like_dislike.png"
+							src={separation_like_dislike}
 							alt="Séparation"
 						/>
 						<button
@@ -218,7 +223,7 @@ function CardProfile({ dog, onRemove, context }: CardProfileProps) {
 							}}
 							aria-label="Aimer ce chien"
 						>
-							<img src="src/assets/images/like_button.png" alt="Like" />
+							<img src={like_button} />
 						</button>
 					</div>
 				)}

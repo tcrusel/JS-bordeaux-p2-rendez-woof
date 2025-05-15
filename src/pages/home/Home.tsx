@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
-
 import "./Home.css";
 import Slider from "../../components/Slider/Slider";
+import heart from "../../assets/images/heart.png";
+import localisation from "../../assets/images/localisation.png";
+import match from "../../assets/images/match.png";
 
 function Home() {
 	return (
@@ -25,7 +27,7 @@ function Home() {
 						<div className="feature">
 							<div className="icon">
 								<img
-									src="src/assets/images/match.png"
+									src={match}
 									alt="Match"
 									className="icon-image"
 								/>
@@ -37,7 +39,7 @@ function Home() {
 						<div className="feature">
 							<div className="icon">
 								<img
-									src="src/assets/images/heart.png"
+									src={heart}
 									alt="Heart"
 									className="icon-image"
 								/>
@@ -49,7 +51,7 @@ function Home() {
 						<div className="feature">
 							<div className="icon">
 								<img
-									src="src/assets/images/localisation.png"
+									src={localisation}
 									alt="Paw"
 									className="icon-image"
 								/>
