@@ -5,6 +5,9 @@
 	margin-bottom: 20px;
 	margin-top: 20px;
 	justify-content: flex-start;
+	padding-left: 60px;
+	padding-bottom: 50px;
+	gap: 50px;
 }
 
 .tab-button {
@@ -67,6 +70,8 @@
 	}
 
 	.button-group {
+		padding: 0px;
+		gap: 20px;
 		justify-content: center;
 	}
 
